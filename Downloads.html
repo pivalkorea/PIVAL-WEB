@@ -1,0 +1,151 @@
+<!doctype>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title> (Test) </title>
+    <link rel="shortcut icon" type="image/x-icon" href="icon.ico">
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+        html, body{
+            margin: 0px;
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        footer{
+            color: black;
+            font-size: 12px;
+            
+            padding:10px;
+            text-align: center;
+            background-color: D8D8D8;
+        }
+        .content{
+            display:flex;
+        }
+         
+        .content nav{
+            
+            padding: 0 35 0 35px;
+            background-color: whitesmoke;
+        }
+
+        .content nav img{
+            padding: 40 0 40 0px;
+        }
+        .content nav p{
+            text-align: center;
+        }
+
+        .content main{
+            color: black;
+            width: 100%;
+            text-align: center;
+            
+            background-color: white;
+        }
+
+        .content aside{
+            color: black;
+            background-color: whitesmoke;
+            padding: 25px;
+            text-align: center;
+            }
+            
+
+        @media(max-width:1200px){
+            .content{
+                flex-direction: column;
+            }
+            .content nav, .content aside{
+                border: none;
+            }
+            nav{
+                order:0;
+                height: 70%;
+            }
+            main{
+                order:1;
+            }
+            aside{
+                order:2;
+                display: none;
+            }
+        }
+        nav, aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding:0px;
+        }
+
+        @font-face{
+	    font-family:"NanumSquareL.otf";
+	    src:url('/fonts/NanumSquareL.otf');
+	    url('/fonts/NanumSquareL.otf') format('woff'),
+	    src:url('/fonts/NanumSquareL.otf') format('embedded-opentype'),
+	    url('/fonts/NanumSquareL.otf') format('truetype');
+	    url('/fonts/NanumSquareL.otf') format('svg')
+	    src:local(※), url('/fonts/NanumSquareL.otf') format('woff');
+        font-style: normal;
+        font-weight: normal;
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="content">
+            <nav>
+                <p style="margin-top:20px;">
+                <img src="piuumeng.jpg">
+                
+                    <p><a href="index.html" a style="text-decoration: none; color: black;"> Home</a>
+                    <br/>
+                    <p><a href="about.html" a style="text-decoration: none; color: black;"> About</a>
+                    <br/>
+                    <p><a href="notice.html" a style="text-decoration: none; color: black;"> Notice</a>
+                    <br/>
+                    <p><a href="Downloads.html" a style="text-decoration: none; color: black;"> Downloads</a>
+                    <br/>
+                    <p><a href="Contact.html" a style="text-decoration: none; color: black;"> Contact</a>
+                
+            </nav>
+            <main>
+                <p style="margin-top:70px;">
+                <h1>Catalogue Downloads</h1>
+                <p style="margin-bottom: 45px;">
+                
+                    
+                    <tr>
+                    <td colspan="8" height="800" align="center" style="padding-top:50px;">
+
+
+                    <iframe src="http://mykim5005.dothome.co.kr/bbs/board.php?bo_table=download"
+
+                    width="700" frameborder="0"  height="800" scrolling="no"></iframe>
+
+
+                    </td>
+                    </tr>
+                
+
+            </main>
+            <aside>
+                <br/><br/><br/>
+                Affiliated Companies list.
+            </aside>
+        </section>
+        <footer>
+            28, Dobong-ro 136-gil, Dobong-gu, Seoul, Republic of Korea<br/>
+            Office telephone +12 123 123 123/ E-mail. info@piuum.kr <br/>
+            Copyrightⓒ 2018 PIUUM. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
